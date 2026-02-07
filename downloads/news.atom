@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://sauce-demo.myshopify.com/blogs/news.atom</id>
+  <link rel="alternate" type="text/html" href="https://sauce-demo.myshopify.com/blogs/news"/>
+  <link rel="self" type="application/atom+xml" href="https://sauce-demo.myshopify.com/blogs/news.atom"/>
+  <title>Sauce Demo - News</title>
+  <updated>2014-03-12T20:27:00+00:00</updated>
+  <author>
+    <name>Sauce Demo</name>
+  </author>
+  <entry>
+    <id>https://sauce-demo.myshopify.com/blogs/news/12832805-first-post</id>
+    <published>2014-03-12T20:27:00+00:00</published>
+    <updated>2014-03-12T20:27:00+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://sauce-demo.myshopify.com/blogs/news/12832805-first-post"/>
+    <title>First Post</title>
+    <author>
+      <name>Shopify</name>
+    </author>
+    <content type="html">
+      <![CDATA[<p>This is your store&#8217;s blog. You can use it to talk about new product launches, experiences, tips or other news you want your customers to read about.</p>
+<p>You can check out Shopify&#8217;s <a href="http://www.shopify.com/blog">ecommerce blog</a> for inspiration and advice for your own store and for your store&#8217;s blog.</p>
+<p><strong>How do I remove this post?</strong><br />
+Log in to your store&#8217;s <a href="/admin">admin area</a> then go to the blog section to delete this post.</p>
+<p><strong>Why use Shopify?</strong><br />
+<a href="http://www.shopify.com/">Shopify</a> gives you everything you need to <a href="http://www.shopify.com/tour/sell-online">sell online</a> and run an online store.  Pick an <a href="http://www.shopify.com/tour/website-design">ecommerce template</a>, add your products, then launch your store to the world.  Shopify includes <a href="http://www.shopify.com/tour/ecommerce-hosting">ecommerce hosting</a>, a <a href="http://www.shopify.com/tour/shopping-cart">shopping cart software</a>, and more.</p></p>]]>
+    </content>
+  </entry>
+</feed>
