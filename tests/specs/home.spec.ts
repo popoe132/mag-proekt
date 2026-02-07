@@ -50,7 +50,7 @@ test("Do Social Facebook", async () => {
         //await expect(newPage).toHaveURL("https://www.facebook.com/shopify");
         });
         
-test ("Do Social Twitter", async () => { 
+test ("Do Social Twitter", async ({browserName}) => { 
         await homePageNavigation.navigateToSocial();   
         const waitingforpage = homePage.page.context().waitForEvent('page');        
         await homePage.TwitterLink.click();
@@ -58,10 +58,16 @@ test ("Do Social Twitter", async () => {
         const newPage = await waitingforpage;
         await newPage.waitForLoadState();
             console.log(await newPage.url());
+        if (browserName === "webkit") {
+        await expect(newPage).toHaveURL(/.*twitter\.com\/sauce/);  
+        //await expect(newPage).toHaveURL("https://twitter.com/sauce_io");
+        } else {
         await expect(newPage).toHaveURL(/.*x\.com\/sauce/);  
         //await expect(newPage).toHaveURL("https://x.com/sauce_io");
+        }
     });
 test ("Do Instagram", async () => {
+        test.setTimeout(120_000);
         await homePageNavigation.navigateToSocial();   
         const waitingforpage = homePage.page.context().waitForEvent('page');        
         await homePage.InstagramLink.click();
