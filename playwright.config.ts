@@ -1,4 +1,5 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices, PlaywrightTestConfig } from '@playwright/test';
+
 
 /**
  * Read environment variables from file.
@@ -24,6 +25,16 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['html'],['github'],['junit', { outputFile: 'results.xml' }], 
+    ['playwright-qase-reporter',
+      {
+        testops: {
+          api: {
+            token: 'b8c15278af8d019ce10ba8db2b546103760070aed929ce8d9b098ade35dea99a',
+          },
+          project: 'MP',
+        },
+      },
+    ],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -79,3 +90,34 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
+const config: PlaywrightTestConfig = {
+use: {
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
+  },
+  reporter: [
+    ['list'],
+    [
+      'playwright-qase-reporter',
+      {
+        debug: true,
+
+        testops: {
+          api: {
+            token: 'b8c15278af8d019ce10ba8db2b546103760070aed929ce8d9b098ade35dea99a',
+          },
+
+          project: 'MP',
+          uploadAttachments: true,
+          showPublicReportLink: true,
+
+          run: {
+            complete: true,
+          },
+        },
+      },
+    ],
+  ],
+};
+
+module.exports = config;

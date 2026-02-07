@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { HomePage } from "../pages/homePage";
 import { HomePageNavigation, HomePageNavigation as homePageNavigation } from "../navigation/navigationhome";
-
+import { qase } from 'playwright-qase-reporter';
 test.describe("Home Page Navigaciq", () => {
     let homePage: HomePage;
     let homePageNavigation: HomePageNavigation;
