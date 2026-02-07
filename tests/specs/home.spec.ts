@@ -66,8 +66,8 @@ test ("Do Social Twitter", async ({browserName}) => {
         //await expect(newPage).toHaveURL("https://x.com/sauce_io");
         }
     });
-/* test ("Do Instagram", async () => {
-        test.setTimeout(120_000);
+test ("Do Instagram", async () => {
+        test.setTimeout(500_000);
         await homePageNavigation.navigateToSocial();   
         const waitingforpage = homePage.page.context().waitForEvent('page');        
         await homePage.InstagramLink.click();
@@ -77,7 +77,7 @@ test ("Do Social Twitter", async ({browserName}) => {
             console.log(await newPage.url());
         await expect(newPage).toHaveURL(/.*instagram\.com/);  
         //await expect(newPage).toHaveURL("https://www.instagram.com/shopify");
-    }); */
+    });
 test ("Do Pinterest", async () => {
         await homePageNavigation.navigateToSocial();   
         const waitingforpage = homePage.page.context().waitForEvent('page');        
