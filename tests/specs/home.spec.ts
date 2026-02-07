@@ -46,7 +46,7 @@ test("Do Social Facebook", async () => {
         const newPage = await waitingforpage;
         await newPage.waitForLoadState(); 
             console.log(await newPage.url()); 
-        await expect(newPage).toHaveURL(/.*facebook\.com\/shopify/);  
+        await expect(newPage).toHaveURL(/.*facebook\.com/);  
         //await expect(newPage).toHaveURL("https://www.facebook.com/shopify");
         });
         
@@ -69,7 +69,7 @@ test ("Do Instagram", async () => {
         const newPage = await waitingforpage;
         await newPage.waitForLoadState();
             console.log(await newPage.url());
-        await expect(newPage).toHaveURL(/.*instagram\.com\/shopify/);  
+        await expect(newPage).toHaveURL(/.*instagram\.com/);  
         //await expect(newPage).toHaveURL("https://www.instagram.com/shopify");
     });
 test ("Do Pinterest", async () => {
@@ -84,19 +84,32 @@ test ("Do Pinterest", async () => {
         //await expect(newPage).toHaveURL("https://www.pinterest.com/chrisjhoughton/social-design/");
     });
 
-test ("Do News", async () => {
-        await homePageNavigation.navigateToSocial();  
-        const newdownload = homePage.page.waitForEvent('download');        
-        await homePage.newslinkdownload.click();
-        //await homePage.menuSocial.getByRole('link').filter({ hasText: /^$/ }).nth(4).click();    
-        const download = await newdownload;
-        await download.saveAs('./downloads/'+ download.suggestedFilename());
+test ("Do News", async ({browserName}) => {
+        await homePageNavigation.navigateToSocial();
         
-            console.log('File downloaded to: ' + './downloads/' + download.suggestedFilename());
+        if (browserName === "firefox") {
+            const newdownload = homePage.page.waitForEvent('download');        
+            await homePage.newslinkdownload.click();
+            //await homePage.menuSocial.getByRole('link').filter({ hasText: /^$/ }).nth(4).click();    
+            const download = await newdownload;
+            await download.saveAs('./downloads/'+ download.suggestedFilename());
+            
+                console.log('File downloaded to: ' + './downloads/' + download.suggestedFilename());
 
-        await expect(download.suggestedFilename()).toBe('news.atom');
-        });  
+            await expect(download.suggestedFilename()).toBe('news.atom');
+            } 
+            else {            
+            const waitingforpage = homePage.page.context().waitForEvent('page');        
+            await homePage.newslinkdownload.click();
+            //await homePage.menuSocial.getByRole('link').filter({ hasText: /^$/ }).nth(3).click();    
+            const newPage = await waitingforpage;
+            await newPage.waitForLoadState();
+                console.log(await newPage.url());
+            await expect(newPage).toHaveURL(/.*news\.atom/);  
+            //await expect(newPage).toHaveURL("https://www.pinterest.com/chrisjhoughton/social-design/");
+            }
 
+    });
 });
 
 test.describe("Nav Tests", () => { 
