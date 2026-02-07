@@ -37,7 +37,7 @@ test.describe("Home Page Navigaciq", () => {
 
 test("Home", async () => {
         
-    await expect(homePage.menuHome).toBeVisible();
+        await expect(homePage.menuHome).toBeVisible();
         await expect(homePage.menuAboutUs).toBeVisible();
         await expect(homePage.menuWishList).toBeVisible();
         await expect(homePage.menuReferAFriend).toBeVisible();
