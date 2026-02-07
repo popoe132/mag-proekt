@@ -12,7 +12,7 @@ test("HP-02 Navigate to About Us page from Home page", async ({ page }) => {
 
 });   
 
-test("HP-03 Navigate to Blog page from Home page", async ({ page }) => {
+test("HP-04 Navigate to Blog page from Home page", async ({ page }) => {
     await page.goto("/");
     await expect(page.getByRole('link', { name: 'Blog' })).toBeVisible(); 
     await page.getByRole('link', { name: 'Blog' }).click();
