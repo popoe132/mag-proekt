@@ -97,6 +97,9 @@ use: {
   },
   reporter: [
     ['list'],
+    ['github'],
+    ['junit', { outputFile: 'results.xml' }],
+    ['html'],
     [
       'playwright-qase-reporter',
       {
