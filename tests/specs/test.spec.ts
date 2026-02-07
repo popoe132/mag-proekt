@@ -4,24 +4,24 @@ import { HomePageNavigation, HomePageNavigation as homePageNavigation } from "..
 import { qase } from 'playwright-qase-reporter';
 
 
-/* test("HP-02 Navigate to About Us page from Home page", async ({ page }) => {
+test(qase(1, "HP-02 Navigate to About Us page from Home page"), async ({ page }) => {
     qase.ignore();
-    await page.goto("/");
+    await page.goto("https://sauce-demo.myshopify.com/");
     await expect(page.locator('#main-menu').getByRole('link', { name: 'About Us' })).toBeVisible();
     
     await page.locator('#main-menu').getByRole('link', { name: 'About Us' }).click();
    
     await expect(page).toHaveURL(/.*about-us/);
 
-});    */
+});   
 
-/* test("HP-04 Navigate to Blog page from Home page", async ({ page }) => {
-    qase.ignore();
-    await page.goto("/");
+test(qase(2, "Navigate to Blog page from Home page"), async ({ page }) => {
+
+    await page.goto("https://sauce-demo.myshopify.com/");
     await expect(page.getByRole('link', { name: 'Blog' })).toBeVisible(); 
     await page.getByRole('link', { name: 'Blog' }).click();
     await expect(page).toHaveURL(/.*blog/);
-})   */
+})  
 
 test.describe("Home Page Navigaciq", () => {
     let homePage: HomePage;
