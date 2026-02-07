@@ -88,6 +88,7 @@ test ("Do Pinterest", async () => {
             console.log(await newPage.url());
         await expect(newPage).toHaveURL(/.*pinterest\.com\/chrisjhoughton\/social-design/);  
         //await expect(newPage).toHaveURL("https://www.pinterest.com/chrisjhoughton/social-design/");
+        
     });
 
 test ("Do News", async ({browserName}) => {

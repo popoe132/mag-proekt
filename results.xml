@@ -1,0 +1,70 @@
+<testsuites id="" name="" tests="17" failures="0" skipped="0" errors="0" time="17.859119">
+<testsuite name="tests\specs\home.spec.ts" timestamp="2026-02-07T21:25:08.824Z" hostname="" tests="13" failures="0" skipped="0" time="16.365" errors="0">
+<testcase name="Home Page Navigaciq › Home" classname="tests\specs\home.spec.ts" time="3.481">
+</testcase>
+<testcase name="Home Page Navigaciq › Do About Us" classname="tests\specs\home.spec.ts" time="0.746">
+</testcase>
+<testcase name="Home Page Navigaciq › Do Wish List" classname="tests\specs\home.spec.ts" time="0.495">
+</testcase>
+<testcase name="Home Page Navigaciq › Do Refer A Friend" classname="tests\specs\home.spec.ts" time="0.512">
+</testcase>
+<testcase name="Home Page Navigaciq › Do Catalog" classname="tests\specs\home.spec.ts" time="0.843">
+</testcase>
+<testcase name="Home Page Navigaciq › Do Blog" classname="tests\specs\home.spec.ts" time="0.773">
+</testcase>
+<testcase name="Home Page Navigaciq › Do Social Facebook" classname="tests\specs\home.spec.ts" time="1.521">
+<system-out>
+<![CDATA[https://www.facebook.com/shopify
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Page Navigaciq › Do Social Twitter" classname="tests\specs\home.spec.ts" time="2.627">
+<system-out>
+<![CDATA[https://x.com/sauce_io
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Page Navigaciq › Do Instagram" classname="tests\specs\home.spec.ts" time="1.034">
+<system-out>
+<![CDATA[https://www.instagram.com/shopify
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Page Navigaciq › Do Pinterest" classname="tests\specs\home.spec.ts" time="2.041">
+<system-out>
+<![CDATA[https://www.pinterest.com/chrisjhoughton/social-design/
+]]>
+</system-out>
+</testcase>
+<testcase name="Home Page Navigaciq › Do News" classname="tests\specs\home.spec.ts" time="0.898">
+<system-out>
+<![CDATA[https://sauce-demo.myshopify.com/blogs/news.atom
+]]>
+</system-out>
+</testcase>
+<testcase name="Nav Tests › Nav There?" classname="tests\specs\home.spec.ts" time="0.488">
+</testcase>
+<testcase name="Nav Tests › Nav Search" classname="tests\specs\home.spec.ts" time="0.906">
+<system-out>
+<![CDATA[https://sauce-demo.myshopify.com/search?type=product&q=shirt
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="tests\specs\test.spec.ts" timestamp="2026-02-07T21:25:08.824Z" hostname="" tests="1" failures="0" skipped="0" time="3.25" errors="0">
+<testcase name="Home Page Navigaciq › Home" classname="tests\specs\test.spec.ts" time="3.25">
+</testcase>
+</testsuite>
+<testsuite name="tests\specs\Testcasestest.spec.ts" timestamp="2026-02-07T21:25:08.824Z" hostname="" tests="3" failures="0" skipped="0" time="0.005" errors="0">
+<testcase name="Example: id.spec.js › Defining Id: Format 1 (Qase ID: 1)" classname="tests\specs\Testcasestest.spec.ts" time="0.003">
+</testcase>
+<testcase name="Example: id.spec.js › Defining Id: Format 2" classname="tests\specs\Testcasestest.spec.ts" time="0.002">
+</testcase>
+<testcase name="Example: id.spec.js › Defining Id: Format 3" classname="tests\specs\Testcasestest.spec.ts" time="0">
+<properties>
+<property name="QaseID" value="3">
+</property>
+</properties>
+</testcase>
+</testsuite>
+</testsuites>
