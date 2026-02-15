@@ -70,5 +70,25 @@ test.describe("Catalog", () => {
     await expect(page.getByRole('button', { name: 'Check Out' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'Remove' })).toBeVisible();
   });
+  test("CAT-06 Sold Out product in catalog page", async ({ page }) => {
+    await homePageNavigation.navigateToCatalog();
+    const productLinks = page.locator('a[href*="/products/"]');
+    await expect(productLinks.first()).toBeVisible();
+    const count = await productLinks.count();
+    //console.log(`Scanning ${count} products for 'Sold Out' status...`);
+    const soldOutItems: string[] = [];
+    for (let i = 0; i < count; i++) {
+      const product = productLinks.nth(i);
+      const isSoldOut = await product.getByText("Sold Out", { exact: false }).isVisible().catch(() => false);
+
+      if (isSoldOut) {
+        const name = await product.textContent();
+        soldOutItems.push(name?.trim() || "Unknown Product");
+      }
+    }
+    //.log(`Found ${soldOutItems.length} sold out items:`, soldOutItems);
+    expect(soldOutItems.length).toBeGreaterThan(0);
+    qase.comment(`Found ${soldOutItems.length} sold out items: ${soldOutItems.join(", ")}`);
+    });
 });
 
