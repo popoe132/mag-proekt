@@ -2,6 +2,10 @@ import { test, expect } from "@playwright/test";
 import { HomePage } from "../pages/homePage";
 import { HomePageNavigation, HomePageNavigation as homePageNavigation } from "../navigation/navigationhome";
 import { qase } from 'playwright-qase-reporter';
+
+// $env:QASE_MODE="testops"; $env:QASE_DEBUG="true"; npx playwright test - TOVA ZA LOCALNO PUSKANE KYM QASE
+
+
 test.describe("Home Page Navigaciq", () => {
     let homePage: HomePage;
     let homePageNavigation: HomePageNavigation;
