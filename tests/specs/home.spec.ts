@@ -146,7 +146,7 @@ test.describe("Nav Tests", () => {
         await homePage.menuSearchnav.click();
         await homePage.searchInput.fill("shirt");
         await homePage.searchButton.click();
-        console.log(await homePage.page.url());
+        //console.log(await homePage.page.url());
         await expect(homePage.page).toHaveURL(/.*search\?type=product&q=shirt/); 
         //await expect(homePage.page).toHaveURL("https://sauce-demo.myshopify.com/search?type=product&q=shirt"); 
     });

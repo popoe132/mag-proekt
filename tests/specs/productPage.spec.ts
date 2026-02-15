@@ -47,31 +47,31 @@ test.describe("Product Page", () => {
           const COLOR = page.locator('xpath=/html/body/div[3]/div[2]/div/div[2]/section[2]/form/div[1]/div[2]');
           if (await SIZE.isVisible().catch(() => false)) {
             await expect(SIZE).toBeVisible();
-            console.log(`${name} Size dropdown is visible`);
+            //console.log(`${name} Size dropdown is visible`);
             const dropdown = SIZE.locator('select');
             const options = await dropdown.locator('option').allTextContents();
-            console.log(`${name} Size dropdown options: ${options.join(", ")}`);
+            //console.log(`${name} Size dropdown options: ${options.join(", ")}`);
             for (const expectedSize of expectedSizes) {
               try {
                 expect(options).toContain(expectedSize);
-                console.log(`${name} Size dropdown contains option: ${expectedSize}`);
+                //console.log(`${name} Size dropdown contains option: ${expectedSize}`);
               } catch {
-                console.warn(`${name} Size dropdown does not contain option: ${expectedSize}`);
+                //console.warn(`${name} Size dropdown does not contain option: ${expectedSize}`);
               }
             }
           }
           if (await COLOR.isVisible().catch(() => false)) {
             await expect(COLOR).toBeVisible();
-            console.log(`${name} Color dropdown is visible`);
+            //console.log(`${name} Color dropdown is visible`);
             const dropdown = COLOR.locator('select');
             const options = await dropdown.locator('option').allTextContents();
-            console.log(`${name} Color dropdown options: ${options.join(", ")}`);
+            //console.log(`${name} Color dropdown options: ${options.join(", ")}`);
             for (const expectedColor of expectedColors) {
               try {
                 expect(options).toContain(expectedColor);
-                console.log(`${name} Color dropdown contains option: ${expectedColor}`);
+                //console.log(`${name} Color dropdown contains option: ${expectedColor}`);
               } catch {
-                console.warn(`${name} Color dropdown does not contain option: ${expectedColor}`);
+                //console.warn(`${name} Color dropdown does not contain option: ${expectedColor}`);
               }
 
             }
