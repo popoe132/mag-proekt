@@ -45,11 +45,5 @@ export class HomePageNavigation {
   //navigacia do Social
   async navigateToSocial() {
     await this.homePage.menuSocial.isVisible();   
-    
-    // Here you might want to add an expectation based on the actual URL or behavior
   }
-
-
-
-
 }

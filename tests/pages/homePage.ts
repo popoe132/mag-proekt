@@ -35,9 +35,8 @@ export class HomePage {
   readonly checkoutLink: Locator;
 
   // Footer
-  /* readonly footer: Locator;
   readonly footerSearchLink: Locator;
-  readonly footerAboutUsLink: Locator; */
+  readonly footerAboutUsLink: Locator;
 
 
   constructor(page: Page) {
@@ -63,14 +62,10 @@ export class HomePage {
     this.menuLoginnav = page.getByRole('link', { name: 'Log In' })
     this.menuCreateAccountnav = page.getByRole('link', { name: 'Sign up' })
     // Cart
-    this.myCartLink = page.getByRole('link', { name: 'My Cart (0)' })
+    this.myCartLink = page.getByRole('link', { name: 'My Cart' })
     this.checkoutLink = page.getByRole('link', { name: 'Check Out' })
 
-    // Footer
-    /* this.footer = footer;
-    this.footerSearchLink = footer.getByRole('link', { name: 'Search' }).nth(1)
-    this.footerAboutUsLink = footer.getByRole('link', { name: 'About Us' }).nth(2)
-   */
+
   this.FacebookLink = page.locator('#social').getByRole('link').filter({ hasText: /^$/ }).first();
   this.TwitterLink = page.locator('#social').getByRole('link').filter({ hasText: /^$/ }).nth(1);
   this.InstagramLink = page.locator('#social').getByRole('link').filter({ hasText: /^$/ }).nth(2);
@@ -78,18 +73,10 @@ export class HomePage {
   this.newslinkdownload = page.getByRole('link').filter({ hasText: /^$/ }).nth(4)
   
 
-}
+    // Footer
+    this.footerSearchLink = page.getByRole('link', { name: 'Search' }).nth(1)
+    this.footerAboutUsLink = page.getByRole('link', { name: 'About Us' }).nth(2)
+  
 
-
-
-  /* async navigateToBlog() {
-    await expect(this.menuBlog).toBeVisible();
-    await this.menuBlog.click();
-    await expect(this.page).toHaveURL(/.*blog/);
-  } */
-
-//await page.getByRole('link', { name: 'Blog' }).click();
-//await page.getByRole('link', { name: 'First Post' }).click();
-
-
+  }
 } 

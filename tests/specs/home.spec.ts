@@ -86,7 +86,7 @@ test ("Do Pinterest", async () => {
         const newPage = await waitingforpage;
         await newPage.waitForLoadState();
             console.log(await newPage.url());
-        await expect(newPage).toHaveURL(/.*pinterest\.com\/chrisjhoughton\/social-design/);  
+        await expect(newPage).toHaveURL(/.*pinterest\.com\/chrisjhoughton\/social-designasdasd/);  
         //await expect(newPage).toHaveURL("https://www.pinterest.com/chrisjhoughton/social-design/");
         
     });
@@ -149,5 +149,51 @@ test.describe("Nav Tests", () => {
         console.log(await homePage.page.url());
         await expect(homePage.page).toHaveURL(/.*search\?type=product&q=shirt/); 
         //await expect(homePage.page).toHaveURL("https://sauce-demo.myshopify.com/search?type=product&q=shirt"); 
+    });
+
+    test( "Search", async () => {
+        await homePage.SearchLinknav.click();      
+        await expect(homePage.page).toHaveURL(/.*search/); 
+        
+    });
+    test("Nav About Us", async () => {
+        await homePage.menuAboutUsnav.click();
+        await expect(homePage.page).toHaveURL(/.*about-us/); 
+    });
+    test("Nav Login", async () => {
+        await homePage.menuLoginnav.click();
+        await expect(homePage.page).toHaveURL(/.*account\/login/); 
+    });
+    test("Nav Create Account", async () => {
+        await homePage.menuCreateAccountnav.click();
+        await expect(homePage.page).toHaveURL(/.*account\/register/);   
+    });
+    test("Nav My Cart", async () => {
+        await homePage.myCartLink.click();
+        await expect(homePage.page.locator('div').nth(3)).toBeVisible();
+    });
+    test("Nav Checkout", async () => {
+        await homePage.checkoutLink.click();
+        await expect(homePage.page).toHaveURL(/.*cart/); 
+    });
+});
+
+test.describe("Footer Tests", () => {
+    let homePage: HomePage;
+    let homePageNavigation: HomePageNavigation;
+    
+    test.beforeEach(async ({ page }) => {  
+        homePage = new HomePage(page);
+        homePageNavigation = new HomePageNavigation(homePage);
+         await homePageNavigation.navigateToHomePage();
+    });
+
+    test("Footer Search", async () => {
+        await homePage.footerSearchLink.click();
+        await expect(homePage.page).toHaveURL(/.*search/); 
+    });
+    test("Footer About Us", async () => {
+        await homePage.footerAboutUsLink.click();
+        await expect(homePage.page).toHaveURL(/.*about-us/); 
     });
 });
