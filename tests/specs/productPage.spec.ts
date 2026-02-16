@@ -73,9 +73,7 @@ test.describe("Product Page", () => {
               } catch {
                 //console.warn(`${name} Color dropdown does not contain option: ${expectedColor}`);
               }
-
-            }
-          
+            }          
           }
           await page.goBack();
       }     

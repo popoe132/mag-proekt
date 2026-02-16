@@ -46,4 +46,14 @@ export class HomePageNavigation {
   async navigateToSocial() {
     await this.homePage.menuSocial.isVisible();   
   }
+  //navigacia do login
+  async navigateToLogin() {
+    await this.homePage.menuLoginnav.click();
+    await expect(this.homePage.page).toHaveURL(/.*account\/login/);
+  }
+  //navigacia do create account
+  async navigateToCreateAccount() {
+    await this.homePage.menuCreateAccountnav.click();
+    await expect(this.homePage.page).toHaveURL(/.*account\/register/);
+  }
 }
