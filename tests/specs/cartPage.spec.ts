@@ -16,10 +16,10 @@ test.describe("Cart", () => {
     });  
   
     test("CRT-01 Empty checkoutcart state", async ({ page }) => {
-    await homePage.checkoutLink.click();
-    await expect(page).toHaveURL(/\/cart/i);
-    await expect(page.getByRole("heading", { name: "My Cart" })).toBeVisible();
-    await expect(page.getByText("It appears that your cart is currently empty!")).toBeVisible();
+      await homePage.checkoutLink.click();
+      await expect(page).toHaveURL(/\/cart/i);
+      await expect(page.getByRole("heading", { name: "My Cart" })).toBeVisible();
+      await expect(page.getByText("It appears that your cart is currently empty!")).toBeVisible();
     });
   test("CRT-02 Product appears in checkout cart", async ({ page }) => {
     await homePageNavigation.navigateToCatalog();
@@ -108,7 +108,7 @@ test.describe("Cart", () => {
     await page.waitForTimeout(2000);
     await expect(quantityInput).toHaveValue('2');
     });
-    test("CRT-08 Checkout redirected to checkout page", async ({ page }) => {
+  test("CRT-08 Checkout redirected to checkout page", async ({ page }) => {
     await homePageNavigation.navigateToCatalog();
     await page.getByRole("link", { name: "Grey jacket" }).click();
     await page.getByRole("button", { name: "Add to cart" }).click();
@@ -121,5 +121,5 @@ test.describe("Cart", () => {
     await page.getByRole('button', { name: 'Check Out' }).click();
     await page.waitForTimeout(2000);
     await expect(page).toHaveURL(/\/checkout/i);
-    });
+  });
 });

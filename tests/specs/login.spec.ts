@@ -27,7 +27,7 @@ test.describe("Authentication", () => {
     await page.getByRole("link", { name: "Forgot your password?" }).click();
     await expect(page.getByRole("heading", { name: "Reset Password" })).toBeVisible();
     await expect(page.locator('#recover-email')).toBeVisible();
-    await expect(page.getByRole("button", { name: /Submit/i })).toBeVisible();
+    await expect(page.getByText('Submit')).toBeVisible();
   });
   test("AUTH-03 Login with invalid credentials", async ({ page }) => {
     await homePageNavigation.navigateToLogin();

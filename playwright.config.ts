@@ -76,7 +76,7 @@ use: {
     [
       'playwright-qase-reporter',
       {
-        debug: true,
+        debug: false,
 
         testops: {
           api: {
