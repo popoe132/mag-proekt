@@ -90,7 +90,7 @@ test ("Do Pinterest", async () => {
         const newPage = await waitingforpage;
         await newPage.waitForLoadState();
             console.log(await newPage.url());
-        await expect(newPage).toHaveURL(/.*pinterest\.com\/chrisjhoughton\/social-designasdasd/);  
+        await expect(newPage).toHaveURL(/.*pinterest\.com\/chrisjhoughton\/social-design/);  
         //await expect(newPage).toHaveURL("https://www.pinterest.com/chrisjhoughton/social-design/");
         
     });
