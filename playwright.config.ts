@@ -95,7 +95,7 @@ projects: [
 
         testops: {
           api: {
-            token: 'e80ca5d1cc62d4f3156058dc9250d4c5658c057494b9af063bcc6625e8ad358f', //token ot Qase
+            token: 'e80ca5d1cc62d4f3156058dc9250d4c5658c057494b9af063bcc6625e8ad358f', //token ot Qase i trqbva da se smeni i v github secrets 
           },
 
           project: 'MP',
