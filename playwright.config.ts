@@ -95,7 +95,7 @@ projects: [
 
         testops: {
           api: {
-            token: 'b8c15278af8d019ce10ba8db2b546103760070aed929ce8d9b098ade35dea99a',
+            token: 'e80ca5d1cc62d4f3156058dc9250d4c5658c057494b9af063bcc6625e8ad358f', //token ot Qase
           },
 
           project: 'MP',
