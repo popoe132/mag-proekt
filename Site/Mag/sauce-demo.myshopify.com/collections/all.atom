@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://sauce-demo.myshopify.com/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://sauce-demo.myshopify.com/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://sauce-demo.myshopify.com/collections/all.atom"/>
+  <title>Sauce Demo</title>
+  <updated>2015-02-02T13:36:00+00:00</updated>
+  <author>
+    <name>Sauce Demo</name>
+  </author>
+  <entry>
+    <id>https://sauce-demo.myshopify.com/products/407143389</id>
+    <published>2015-02-02T13:36:00+00:00</published>
+    <updated>2015-02-02T13:36:00+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://sauce-demo.myshopify.com/products/brown-shades"/>
+    <title>Brown Shades</title>
+    <s:type>Sunglasses</s:type>
+    <s:vendor>Sauce Demo</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0399/1157/products/RayBanWayfarer5022sunglasses.JPG?v=1422884271"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Sauce Demo<br>
+        <strong>Type: </strong>Sunglasses<br>
+        <strong>Price: </strong>
+            20.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://sauce-demo.myshopify.com/products/407143389</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">20.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://sauce-demo.myshopify.com/products/263741321</id>
+    <published>2014-03-12T20:46:00+00:00</published>
+    <updated>2014-03-12T20:46:00+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://sauce-demo.myshopify.com/products/noir-jacket"/>
+    <title>Noir jacket</title>
+    <s:type>Jackets</s:type>
+    <s:vendor>Sauce Demo</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0399/1157/products/jacket.jpg?v=1394657254"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Sauce Demo<br>
+        <strong>Type: </strong>Jackets<br>
+        <strong>Price: </strong>
+            60.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><span>This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at </span><a href="http://www.shopify.ca/blog/8211159-9-simple-ways-to-write-product-descriptions-that-sell" target="_blank">9 ways to write compelling product descriptions</a><span>. In Theme Settings you can also change render the product description to the write of the product images.</span></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://sauce-demo.myshopify.com/products/263741321</id>
+      <title>S / Blue</title>
+      <s:price currency="GBP">60.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://sauce-demo.myshopify.com/products/263741321</id>
+      <title>M / Blue</title>
+      <s:price currency="GBP">60.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://sauce-demo.myshopify.com/products/263741321</id>
+      <title>L / Blue</title>
+      <s:price currency="GBP">60.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://sauce-demo.myshopify.com/products/263741321</id>
+      <title>S / Red</title>
+      <s:price currency="GBP">60.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://sauce-demo.myshopify.com/products/263741321</id>
+      <title>M / Red</title>
+      <s:price currency="GBP">60.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://sauce-demo.myshopify.com/products/263741321</id>
+      <title>L / Red</title>
+      <s:price currency="GBP">60.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://sauce-demo.myshopify.com/products/263741033</id>
+    <published>2014-03-12T20:46:00+00:00</published>
+    <updated>2014-03-12T20:46:00+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://sauce-demo.myshopify.com/products/striped-top"/>
+    <title>Striped top</title>
+    <s:type>Tops</s:type>
+    <s:vendor>ASOS</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0399/1157/products/top-striped.jpg?v=1394657204"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>ASOS<br>
+        <strong>Type: </strong>Tops<br>
+        <strong>Price: </strong>
+            50.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><span>This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at </span><a href="http://www.shopify.ca/blog/8211159-9-simple-ways-to-write-product-descriptions-that-sell" target="_blank">9 ways to write compelling product descriptions</a><span>. In Theme Settings you can also change render the product description to the write of the product images.</span>X</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://sauce-demo.myshopify.com/products/263741033</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">50.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://sauce-demo.myshopify.com/products/263739389</id>
+    <published>2014-03-12T20:42:38+00:00</published>
+    <updated>2014-03-12T20:42:38+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://sauce-demo.myshopify.com/products/grey-jacket"/>
+    <title>Grey jacket</title>
+    <s:type>Jackets</s:type>
+    <s:vendor>Sauce Demo</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0399/1157/products/fleece.jpg?v=1394656989"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Sauce Demo<br>
+        <strong>Type: </strong>Jackets<br>
+        <strong>Price: </strong>
+            55.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><span>This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at </span><a href="http://www.shopify.ca/blog/8211159-9-simple-ways-to-write-product-descriptions-that-sell" target="_blank">9 ways to write compelling product descriptions</a><span>. In Theme Settings you can also change render the product description to the write of the product images.</span>X</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://sauce-demo.myshopify.com/products/263739389</id>
+      <title>Grey jacket</title>
+      <s:price currency="GBP">55.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://sauce-demo.myshopify.com/products/263738805</id>
+    <published>2014-03-12T20:41:00+00:00</published>
+    <updated>2014-03-12T20:41:00+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://sauce-demo.myshopify.com/products/flower-print-jeans"/>
+    <title>Black heels</title>
+    <s:type>Jeans</s:type>
+    <s:vendor>Sauce Demo</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0399/1157/products/shoes3.jpg?v=1394656926"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Sauce Demo<br>
+        <strong>Type: </strong>Jeans<br>
+        <strong>Price: </strong>
+            45.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><span>This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at </span><a href="http://www.shopify.ca/blog/8211159-9-simple-ways-to-write-product-descriptions-that-sell" target="_blank">9 ways to write compelling product descriptions</a><span>. In Theme Settings you can also change render the product description to the write of the product images.</span></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Vintage</s:tag>
+    <s:variant>
+      <id>https://sauce-demo.myshopify.com/products/263738805</id>
+      <title>S / Red</title>
+      <s:price currency="GBP">45.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://sauce-demo.myshopify.com/products/263738805</id>
+      <title>M / Red</title>
+      <s:price currency="GBP">45.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://sauce-demo.myshopify.com/products/263738805</id>
+      <title>L / Red</title>
+      <s:price currency="GBP">45.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://sauce-demo.myshopify.com/products/263738357</id>
+    <published>2014-03-12T20:40:00+00:00</published>
+    <updated>2014-03-12T20:40:00+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://sauce-demo.myshopify.com/products/white-sandals"/>
+    <title>White sandals</title>
+    <s:type>Shoes</s:type>
+    <s:vendor>Sauce Demo</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0399/1157/products/shoes2.jpg?v=1394656869"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Sauce Demo<br>
+        <strong>Type: </strong>Shoes<br>
+        <strong>Price: </strong>
+            25.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><span>This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at </span><a href="http://www.shopify.ca/blog/8211159-9-simple-ways-to-write-product-descriptions-that-sell" target="_blank">9 ways to write compelling product descriptions</a><span>. In Theme Settings you can also change render the product description to the write of the product images.</span></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://sauce-demo.myshopify.com/products/263738357</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">25.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://sauce-demo.myshopify.com/products/263735661</id>
+    <published>2014-03-12T20:33:58+00:00</published>
+    <updated>2014-03-12T20:33:58+00:00</updated>
+    <link rel="alternate" type="text/html" href="https://sauce-demo.myshopify.com/products/bronze-sandals"/>
+    <title>Bronze sandals</title>
+    <s:type>Shoes</s:type>
+    <s:vendor>Sauce Demo</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0399/1157/products/shoes.jpg?v=1394656541"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Sauce Demo<br>
+        <strong>Type: </strong>Shoes<br>
+        <strong>Price: </strong>
+            39.99
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><span>This area is populated by the product description. If you ever run out of things to say about what you're selling then take a look at </span><a href="http://www.shopify.ca/blog/8211159-9-simple-ways-to-write-product-descriptions-that-sell" target="_blank">9 ways to write compelling product descriptions</a><span>. In Theme Settings you can also change render the product description to the write of the product images.</span></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://sauce-demo.myshopify.com/products/263735661</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">39.99</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+</feed>

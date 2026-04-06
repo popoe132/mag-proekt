@@ -17,7 +17,6 @@ test.describe("Home Page Navigaciq", () => {
         //await page.goto("/");
     });
 
-
 test("Home", async () => {
         await expect(homePage.menuHome).toBeVisible();
         await expect(homePage.menuAboutUs).toBeVisible();
@@ -173,6 +172,7 @@ test.describe("Nav Tests", () => {
         await expect(homePage.page).toHaveURL(/.*account\/register/);   
     });
     test("Nav My Cart", async () => {
+        await homePage.page.goto("https://sauce-demo.myshopify.com"); 
         await homePage.myCartLink.click();
         await expect(homePage.page.locator('div').nth(3)).toBeVisible();
     });

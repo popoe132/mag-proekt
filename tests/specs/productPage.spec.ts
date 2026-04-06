@@ -42,7 +42,7 @@ test.describe("Product Page", () => {
         for (const name of expectedProducts) {
           await expect(page.getByRole("link", { name })).toBeVisible();
           await page.getByRole("link", {name}).click();
-          await page.waitForTimeout(2000);
+          await page.waitForTimeout(100);
           const SIZE = page.locator('xpath=/html/body/div[3]/div[2]/div/div[2]/section[2]/form/div[1]/div[1]');
           const COLOR = page.locator('xpath=/html/body/div[3]/div[2]/div/div[2]/section[2]/form/div[1]/div[2]');
           if (await SIZE.isVisible().catch(() => false)) {

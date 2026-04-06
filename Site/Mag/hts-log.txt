@@ -1,0 +1,38 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 06 Apr 2026 10:43:09 at https://sauce-demo.myshopify.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://sauce-demo.myshopify.com/ -O1 "C:\Users\tsvet\Desktop\MAG\Playrwight\Site\Mag" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:43:33	Error: 	"Not Found" (404) at link dk7vxmpleem9z.cloudfront.net/sgmnt.min.js (from https://sauce-demo.myshopify.com/)
+10:43:33	Error: 	"Not Found" (404) at link https://sauce-demo.myshopify.com/POST (from https://sauce-demo.myshopify.com/)
+10:43:33	Error: 	"Error when decompressing" (-1) at link https://sauce-demo.myshopify.com/cdn (from https://sauce-demo.myshopify.com/)
+10:43:56	Error: 	"Not Found" (404) at link https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/fancybox_sprite.png (from https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/theme.scss.css?v=137440661423078363071656106300)
+10:43:56	Error: 	"Not Found" (404) at link https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/fancybox_loading.gif (from https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/theme.scss.css?v=137440661423078363071656106300)
+10:43:56	Error: 	"Not Found" (404) at link https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/blank.gif (from https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/theme.scss.css?v=137440661423078363071656106300)
+10:43:56	Error: 	"Not Found" (404) at link https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/fancybox_overlay.png?0 (from https://sauce-demo.myshopify.com/cdn/shop/t/2/assets/theme.scss.css?v=137440661423078363071656106300)
+10:43:56	Error: 	"Not Found" (404) at link https://sauce-demo.myshopify.com/pages/POST (from https://sauce-demo.myshopify.com/pages/about-us)
+10:43:56	Error: 	"Not Found" (404) at link https://sauce-demo.myshopify.com/account/POST (from https://sauce-demo.myshopify.com/account/login)
+10:43:56	Error: 	"Not Found" (404) at link https://sauce-demo.myshopify.com/collections/POST (from https://sauce-demo.myshopify.com/collections/all)
+10:44:07	Error: 	"Not Found" (404) at link https://sauce-demo.myshopify.com/blogs/POST (from https://sauce-demo.myshopify.com/blogs/news)
+10:44:08	Warning: 	link is probably looping, type unknown, aborting: https://sauce-demo.myshopify.com/admin/authenticate?return_url=https%3A%2F%2Fsauce-demo.myshopify.com%2Fadmin
+10:44:11	Error: 	"Not Found" (404) at link https://sauce-demo.myshopify.com/collections/frontpage/products/POST (from https://sauce-demo.myshopify.com/collections/frontpage/products/grey-jacket)
+10:44:11	Error: 	"Not Found" (404) at link https://sauce-demo.myshopify.com/products/POST (from https://sauce-demo.myshopify.com/products/flower-print-jeans)
+10:44:11	Error: 	"Not Found" (404) at link https://sauce-demo.myshopify.com/blogs/news/POST (from https://sauce-demo.myshopify.com/blogs/news/12832805-first-post)
+10:44:12	Warning: 	Permanent Redirect for pinterest.com/robots.txt
+10:44:12	Warning: 	Redirected link is identical because of 'URL Hack' option: pinterest.com/robots.txt and https://pinterest.com/robots.txt
+10:44:12	Warning: 	Warning moved treated for pinterest.com/robots.txt (real one is https://pinterest.com/robots.txt)
+10:44:12	Warning: 	Permanent Redirect for pinterest.com/pin/create/button/?url=https://sauce-demo.myshopify.com//blogs/news/12832805-first-post&media=//sauce-demo.myshopify.com/cdn/shop/t/2/assets/logo.png?v=75283676530009549261394657629&description=First%20Post
+10:44:12	Warning: 	Redirected link is identical because of 'URL Hack' option: pinterest.com/pin/create/button/?url=https://sauce-demo.myshopify.com//blogs/news/12832805-first-post&media=//sauce-demo.myshopify.com/cdn/shop/t/2/assets/logo.png?v=75283676530009549261394657629&description=First%20Post and https://pinterest.com/pin/create/button/?url=https://sauce-demo.myshopify.com//blogs/news/12832805-first-post&media=//sauce-demo.myshopify.com/cdn/shop/t/2/assets/logo.png?v=75283676530009549261394657629&description=First%20Post
+10:44:12	Warning: 	File has moved from pinterest.com/pin/create/button/?url=https://sauce-demo.myshopify.com//blogs/news/12832805-first-post&media=//sauce-demo.myshopify.com/cdn/shop/t/2/assets/logo.png?v=75283676530009549261394657629&description=First%20Post to https://pinterest.com/pin/create/button/?url=https://sauce-demo.myshopify.com//blogs/news/12832805-first-post&media=//sauce-demo.myshopify.com/cdn/shop/t/2/assets/logo.png?v=75283676530009549261394657629&description=First%20Post
+10:44:12	Warning: 	Permanent Redirect for https://pinterest.com/robots.txt
+10:44:12	Warning: 	Redirected link is identical because of 'URL Hack' option: https://pinterest.com/robots.txt and https://www.pinterest.com/robots.txt
+10:44:12	Warning: 	Warning moved treated for https://pinterest.com/robots.txt (real one is https://www.pinterest.com/robots.txt)
+10:44:12	Warning: 	Permanent Redirect for https://pinterest.com/pin/create/button/?url=https://sauce-demo.myshopify.com//blogs/news/12832805-first-post%26media=//sauce-demo.myshopify.com/cdn/shop/t/2/assets/logo.png?v=75283676530009549261394657629%26description=First%20Post
+10:44:12	Warning: 	Redirected link is identical because of 'URL Hack' option: https://pinterest.com/pin/create/button/?url=https://sauce-demo.myshopify.com//blogs/news/12832805-first-post%26media=//sauce-demo.myshopify.com/cdn/shop/t/2/assets/logo.png?v=75283676530009549261394657629%26description=First%20Post and https://www.pinterest.com/pin/create/button/?url=https://sauce-demo.myshopify.com//blogs/news/12832805-first-post%26media=//sauce-demo.myshopify.com/cdn/shop/t/2/assets/logo.png?v=75283676530009549261394657629%26description=First%20Post
+10:44:12	Warning: 	File has moved from https://pinterest.com/pin/create/button/?url=https://sauce-demo.myshopify.com//blogs/news/12832805-first-post%26media=//sauce-demo.myshopify.com/cdn/shop/t/2/assets/logo.png?v=75283676530009549261394657629%26description=First%20Post to https://www.pinterest.com/pin/create/button/?url=https://sauce-demo.myshopify.com//blogs/news/12832805-first-post%26media=//sauce-demo.myshopify.com/cdn/shop/t/2/assets/logo.png?v=75283676530009549261394657629%26description=First%20Post
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 3 seconds : 106 links scanned, 87 files written (2781893 bytes overall) [1875787 bytes received at 29774 bytes/sec], 2119411 bytes transferred using HTTP compression in 54 files, ratio 29%, 7.9 requests per connection
+(14 errors, 13 warnings, 0 messages)

@@ -14,7 +14,8 @@ export class HomePageNavigation {
 
 //navigaticq do saita
   async navigateToHomePage() {
-    await this.homePage.page.goto("https://sauce-demo.myshopify.com/");
+    //await this.homePage.page.goto("https://sauce-demo.myshopify.com/");
+    await this.homePage.page.goto("http://localhost:3000/");
   }
 
   //navigacia do Catalog

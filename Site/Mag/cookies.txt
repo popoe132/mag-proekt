@@ -1,0 +1,20 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+sauce-demo.myshopify.com	TRUE	/admin	FALSE	1999999999	_secure_admin_session_id	bd2b3ea98b099048e04d65ec2ee68933
+sauce-demo.myshopify.com	TRUE	/admin	FALSE	1999999999	_secure_admin_session_id_csrf	bd2b3ea98b099048e04d65ec2ee68933
+sauce-demo.myshopify.com	TRUE	/admin	FALSE	1999999999	_master_udr	eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWxsWXpZME1EVTBPUzFtTVdKakxUUmhNekF0T0RabFl5MHdOMkUxWmpSbU5UQmtOV1FHT2daRlJnPT0iLCJleHAiOiIyMDI4LTA0LTA2VDA3OjQzOjQ4Ljg4MloiLCJwdXIiOiJjb29raWUuX21hc3Rlcl91ZHIifX0%3D--9be6c180f9581c982fea15cd7a849debd5efd09d
+sauce-demo.myshopify.com	TRUE	/admin	FALSE	1999999999	koa.sid	FYqxkAD3fpU-DHXrz2dqXBf1b-TZyr84
+sauce-demo.myshopify.com	TRUE	/admin	FALSE	1999999999	koa.sid.sig	6Jvo-n478hX9t2MxRKNLlQ39ZWs
+sauce-demo.myshopify.com	TRUE	/	FALSE	1999999999	_shopify_analytics	:AZ1hvtZdAAEAMwmGaUR_odKaPJVHnPsBBehQKr6wq09sxfPNyuI56XwwzrhDLoOa8XwDvqjOyz1xjMVEYOcBylvk96NtihM_ka1dgmcvmfPqi0Y1YF73VpsznV_PYPZGZNMZvYEPxI3c2w:
+sauce-demo.myshopify.com	TRUE	/	FALSE	1999999999	_shopify_marketing	:AZ1hvtZdAAEAmswrnGP53ekczDcu_nAPkJmjxxAUlFiGFSWWukCjUiYUlNUfZVAmEod7I5DT6o62lR116AoW4AWTo0CwflbxS0E4dD_fO3KqsV8040PTOtzLlET7XNFPmg:
+sauce-demo.myshopify.com	TRUE	/	FALSE	1999999999	_shopify_essential	:AZ1hvtYFAAEA-NrVwrPrkqh_5yO4wxFNvjIDXfvd-2mMcFXFW1k1ukmSs1c2jaIDrA3crmgLFSC2kJ_81I1H131KH9rRIXSGVvUVyKUVqS8Wb9U5nY6JXbBFt3ZqXU6RQCXHLwxTgFIRSTPvi67xVuaznfnK52ZnjeHm4MHOrOOo_33EvMV9ttrhxGat-OvXbLAMo_84fFeRdjPL9gfSLl7qw1wruf8DjreiiRc-seK5XwkaTr8KLcF41EXrpJotP5QKT7E6egQ9kjL6b5BZu8f1oJWbitVrkJyA_3EjonB4_F-DtPE02juh_oe59rwjw4FOXrSN3Ey342abLydSpPVgaw7qO6B3XEW_LpIXpZMVYqIL95ehO1AHb-qnwZkD_xVFcgS-KpBDQF8TC0MPUw:
+sauce-demo.myshopify.com	TRUE	/	FALSE	1999999999	Priority	High
+admin.shopify.com	TRUE	/	FALSE	1999999999	samesite	lax
+sauce-demo.myshopify.com	TRUE	/	FALSE	1999999999	koa.sid.sig	RqS_IJJ6utiPalhDAjydjHehLOk
+sauce-demo.myshopify.com	TRUE	/	FALSE	1999999999	samesite	lax
+sauce-demo.myshopify.com	TRUE	/	FALSE	1999999999	localization	BG
+sauce-demo.myshopify.com	TRUE	/	FALSE	1999999999	cart_currency	GBP
+sauce-demo.myshopify.com	TRUE	/	FALSE	1999999999	_shopify_y	41afa87f-080b-4811-8900-b72ccbbe78ea
+sauce-demo.myshopify.com	TRUE	/	FALSE	1999999999	_shopify_s	50399e63-c339-4b25-b6a7-78dd0f07a7f4
+sauce-demo.myshopify.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+

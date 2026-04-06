@@ -24,10 +24,18 @@ export default defineConfig({
     ],
   ],
   use: {
-    baseURL: 'https://sauce-demo.myshopify.com/',
+    //baseURL: 'https://sauce-demo.myshopify.com/',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
   },
+  webServer: {
+    command: 'npx serve',
+    url: 'http://localhost:3000',
+    cwd: './Site/Mag/sauce-demo.myshopify.com',
+    timeout: 120 * 1000,
+    reuseExistingServer: true,
+  },
+
   /* Configure projects for major browsers */
   projects: [
     {
@@ -52,7 +60,14 @@ use: {
     video: 'retain-on-failure',
     trace: 'on-first-retry',
   },
-    projects: [
+webServer: {
+    command: 'npx serve',
+    url: 'http://localhost:3000',
+    cwd: './Site/Mag/sauce-demo.myshopify.com',
+    timeout: 120 * 1000,
+    reuseExistingServer: true,
+  },
+projects: [
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },

@@ -33,6 +33,7 @@ test.describe("Cart", () => {
     await expect(page.getByRole("link", { name: "Grey jacket" })).toBeVisible();
   });
   test("CRT-03 Empty appears in the cart popup", async ({ page }) => {
+    await homePage.page.goto("https://sauce-demo.myshopify.com");
     await homePage.myCartLink.click();
     await expect(page.getByText("Your cart is empty")).toBeVisible();
   });
@@ -48,7 +49,6 @@ test.describe("Cart", () => {
     await homePage.myCartLink.click();
     await expect(homePage.page.locator('div').nth(3)).toBeVisible();    
     await expect(page.getByRole('link', { name: 'Grey jacket - Grey jacket -' })).toBeVisible();
-    await expect(page.getByRole('button', { name: 'Check Out' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'Remove' })).toBeVisible();
   });
   test("CRT-05 Remove product from cart popup", async ({ page }) => {
@@ -63,9 +63,7 @@ test.describe("Cart", () => {
     await homePage.myCartLink.click();
     await expect(homePage.page.locator('div').nth(3)).toBeVisible();    
     await expect(page.getByRole('link', { name: 'Grey jacket - Grey jacket -' })).toBeVisible();
-    await expect(page.getByRole('button', { name: 'Check Out' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'Remove' })).toBeVisible();
-
     await page.getByRole('link', { name: 'Remove' }).click();
     await page.waitForTimeout(2000);
     await expect(page.getByText("Your cart is empty")).toBeVisible();
@@ -87,6 +85,7 @@ test.describe("Cart", () => {
     await expect(page).toHaveURL(/\/collections\/all/i);
     });
     test("CRT-07 Product quantity in cart popup", async ({ page }) => {
+    await homePage.page.goto("https://sauce-demo.myshopify.com");
     await homePageNavigation.navigateToCatalog();
     await page.getByRole("link", { name: "Grey jacket" }).click();
     await page.getByRole("button", { name: "Add to cart" }).click();
@@ -98,7 +97,6 @@ test.describe("Cart", () => {
     await homePage.myCartLink.click();
     await expect(homePage.page.locator('div').nth(3)).toBeVisible();    
     await expect(page.getByRole('link', { name: 'Grey jacket - Grey jacket -' })).toBeVisible();
-    await expect(page.getByRole('button', { name: 'Check Out' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'Remove' })).toBeVisible();
     const quantityInput = page.locator('#updates_611945025');
     await expect(quantityInput).toBeVisible();

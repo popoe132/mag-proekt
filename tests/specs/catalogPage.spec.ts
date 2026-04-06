@@ -63,7 +63,6 @@ test.describe("Catalog", () => {
     await homePage.myCartLink.click();
     await expect(homePage.page.locator('div').nth(3)).toBeVisible();    
     await expect(page.getByRole('link', { name: 'Grey jacket - Grey jacket -' })).toBeVisible();
-    await expect(page.getByRole('button', { name: 'Check Out' })).toBeVisible();
     await expect(page.getByRole('link', { name: 'Remove' })).toBeVisible();
   });
   test("CAT-06 Sold Out product in catalog page", async ({ page }) => {

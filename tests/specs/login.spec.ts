@@ -30,6 +30,7 @@ test.describe("Authentication", () => {
     await expect(page.getByText('Submit')).toBeVisible();
   });
   test("AUTH-03 Login with invalid credentials", async ({ page }) => {
+    await homePage.page.goto("https://sauce-demo.myshopify.com");
     await homePageNavigation.navigateToLogin();
     await page.getByRole('textbox', { name: 'Email Address' }).fill('invalid@example.com');
     await page.getByRole('textbox', { name: 'Password' }).fill('invalidpassword');
@@ -40,6 +41,7 @@ test.describe("Authentication", () => {
     //await expect(page.getByText("Invalid email or password")).toBeVisible();
   });
   test("AUTH-04 Login with valid credentials", async ({ page }) => {
+    await homePage.page.goto("https://sauce-demo.myshopify.com");
     await homePageNavigation.navigateToLogin();
     await page.getByRole('textbox', { name: 'Email Address' }).fill('');
     await page.getByRole('textbox', { name: 'Password' }).fill('');
@@ -59,6 +61,7 @@ test.describe("Authentication", () => {
     await expect(page.getByRole("button", { name: /Create/i })).toBeVisible();
   });
   test("AUTH-06 Registration with valid credentials", async ({ page }) => {    
+    await homePage.page.goto("https://sauce-demo.myshopify.com");
     await homePageNavigation.navigateToCreateAccount();
     await page.locator('input[name="customer[first_name]"]').fill('Test'); 
     await page.locator('input[name="customer[last_name]"]').fill('User');
@@ -70,6 +73,7 @@ test.describe("Authentication", () => {
     await expect(page.locator('iframe[title="hCaptcha challenge"]').contentFrame().locator('body')).toBeVisible();
   });
   test("AUTH-06 Registration with existing email", async ({ page }) => {    
+    await homePage.page.goto("https://sauce-demo.myshopify.com");
     await homePageNavigation.navigateToCreateAccount();
     await page.locator('input[name="customer[first_name]"]').fill('Test');
     await page.locator('input[name="customer[last_name]"]').fill('User');
@@ -82,6 +86,7 @@ test.describe("Authentication", () => {
     //await expect(page.getByText("This email address is already")).toBeVisible();
   });
   test("AUTH-07 Recovery password with valid email", async ({ page }) => {
+    await homePage.page.goto("https://sauce-demo.myshopify.com");
     await homePageNavigation.navigateToLogin();
     await page.getByRole("link", { name: "Forgot your password?" }).click();
     await page.locator('#recover-email').fill('test@test.com');
