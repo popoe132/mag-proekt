@@ -16,7 +16,7 @@ export default defineConfig({
       {
         testops: {
           api: {
-            token: 'e80ca5d1cc62d4f3156058dc9250d4c5658c057494b9af063bcc6625e8ad358f', //token ot Qase
+            token: '901f783d6574f6e8f65ee3ea57f5a4f24978ee2d8ad747d8ee20326bccee9821', //token ot Qase
           },
           project: 'MP',
         },
@@ -95,7 +95,7 @@ projects: [
 
         testops: {
           api: {
-            token: 'e80ca5d1cc62d4f3156058dc9250d4c5658c057494b9af063bcc6625e8ad358f', //token ot Qase i trqbva da se smeni i v github secrets 
+            token: '901f783d6574f6e8f65ee3ea57f5a4f24978ee2d8ad747d8ee20326bccee9821', //token ot Qase i trqbva da se smeni i v github secrets 
           },
 
           project: 'MP',
